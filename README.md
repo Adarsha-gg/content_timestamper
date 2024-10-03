@@ -1,66 +1,19 @@
-## Foundry
+*** A Blog Timestamper ***
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+It takes a string and then incodes it with a timestamp in the blockchain setting the caller to its owner. This makes the content un-retimestamped ever in the future which can be used for copyright purposes.
 
-Foundry consists of:
+**Issues**
+Doesnt currently work with strings such as "()", " ' ", "_"
+I have to learn Regex which I haven't yet T_T
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+**What I want this project to do**
+Make this deployable on a cheap blockchain.
+Lets users claim words/phrases that they like.
+Assosciate the wallet address with a social media so you can see who owns what.
+Deploy it in a website for users to interact.
+Auto update the UI whenever a new word is claimed. (Can trigger a event ig)
+Add payment to wallet address.
+Develop frontend for doing all the stuff mentioned above
 
-## Documentation
 
-https://book.getfoundry.sh/
 
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
