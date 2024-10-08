@@ -53,6 +53,7 @@ contract Timestamper {
     }
 
     function pay_contract() external payable{}
+    
     function withdraw_contract() public {
         if (msg.sender == contract_owner){
             address payable receiver = payable(contract_owner);
